@@ -44,7 +44,7 @@ class FormUtil
             return;
         }
 
-        $types[] = $formType->getBlockPrefix();
+        $types[] = $formType->getName();
 
         self::typeAncestryForType($formType->getParent(), $types);
     }
